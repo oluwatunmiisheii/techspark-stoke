@@ -18,7 +18,7 @@ export default function Home() {
           </p>
           <Link
             className="inline-flex justify-center rounded-2xl bg-[#ff5252] hover:text-white hover:bg-zinc-900 p-4 text-base font-semibold text-white focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2  active:text-white/70"
-            href="mailto:james@alt-three.com?subject=Sponsor PHP Stoke"
+            href="mailto:hello@techsparkstoke.com?subject=Sponsor Tech Spark Stoke"
             target="_blank"
             rel="noreferrer"
           >
