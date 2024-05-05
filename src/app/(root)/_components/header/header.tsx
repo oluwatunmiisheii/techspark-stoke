@@ -9,7 +9,7 @@ import Image from 'next/image'
 const links = [
   {
     name: 'Hosts',
-    url: '#',
+    url: '#hosts',
   },
   {
     name: 'Speakers',
