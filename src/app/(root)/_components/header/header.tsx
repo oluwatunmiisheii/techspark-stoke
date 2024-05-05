@@ -28,7 +28,7 @@ export const Header = () => {
       <Banner />
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8 pt-3" aria-label="Global">
         <div>
-          <Link href="#" className="-m-1.5 p-1.5">
+          <Link href="#" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
             <span className="sr-only">Your Company</span>
             <Image className="h-[40px] w-auto" width={40} height={40} src="/icon_tech_sparks.png" alt="logo" />
           </Link>
