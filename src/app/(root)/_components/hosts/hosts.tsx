@@ -67,6 +67,7 @@ export const Hosts = () => {
                         <li>
                           <Link
                             href={host.twitter}
+                            target="_blank"
                             aria-label="Twitter"
                             className="text-[#ff5252] bg-[#fffcf0] shadow rounded-full size-8 flex items-center justify-center"
                           >
@@ -80,6 +81,7 @@ export const Hosts = () => {
                           <Link
                             href={host.linkedin}
                             aria-label="Linkedin"
+                            target="_blank"
                             className="text-[#ff5252] bg-[#fffcf0] shadow rounded-full size-8 flex items-center justify-center"
                           >
                             <span className="sr-only">Linkedin</span>

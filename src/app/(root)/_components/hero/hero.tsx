@@ -51,8 +51,8 @@ export const Hero = () => {
             </p>
           </div>
           <Link
-            className="inline-flex justify-center rounded-2xl bg-gray-900 p-4 text-base font-semibold text-white hover:bg-indigo-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 active:text-white/70 my-10 w-full sm:hidden"
-            href="https://www.meetup.com/php-stoke/events/300346017/"
+            className="inline-flex justify-center rounded-2xl bg-gray-900 p-4 text-base font-semibold text-white hover:bg-gray-700 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 active:text-white/70 my-10 w-full sm:hidden"
+            href="https://www.eventbrite.com/e/tech-spark-stoke-tickets-898152366907"
             target="_blank"
             rel="noreferrer"
           >
