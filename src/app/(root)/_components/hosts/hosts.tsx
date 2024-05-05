@@ -5,21 +5,27 @@ import React from 'react'
 const hosts = [
   {
     name: 'Emmanuel Ogbiyoyo',
-    role: 'Co Founder @ Experia',
+    role: 'Co Founder',
+    company: 'Experia',
+    companyUrl: 'https://www.expitra.com',
     image: '/images/hosts/IMG_7317.JPG',
     twitter: 'https://twitter.com/nuel_ogbiyoyo',
     linkedin: 'https://www.linkedin.com/in/nueljoe/',
   },
   {
     name: 'Ameen Ameen',
-    role: 'Software Engineer @ someplace',
+    role: 'Software Engineer',
+    company: 'someplace',
+    companyUrl: 'https://someplace.com',
     image: '/images/hosts/IMG_7317.JPG',
     twitter: 'https://twitter.com/jbrooksuk',
     linkedin: 'https://pinkary.com/@jbrooksuk?ref=phpstoke',
   },
   {
     name: 'Wilson Adenuga',
-    role: 'Software Engineer @ Beyond IT SRL',
+    role: 'Software Engineer',
+    company: 'Beyond IT SRL',
+    companyUrl: 'https://beyondit.it/',
     image: '/images/hosts/tunmii.jpeg',
     twitter: 'https://twitter.com/Adenugawilson',
     linkedin: 'https://www.linkedin.com/in/wilson-adenuga/',
@@ -92,7 +98,17 @@ export const Hosts = () => {
                     <div className="space-y-2">
                       <div className="space-y-1 text-lg font-medium leading-6">
                         <h3 className="text-zinc-800 text-[22px] font-bold">{host.name}</h3>
-                        <p className="text-zinc-600">{host.role}</p>
+                        <p className="text-zinc-600">
+                          {host.role} <span className="text-[#ff5252]">(@)</span>{' '}
+                          <Link
+                            className="underline font-bold text-zinc-800"
+                            href={host.companyUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {host.company}
+                          </Link>
+                        </p>
                       </div>
                     </div>
                   </div>
