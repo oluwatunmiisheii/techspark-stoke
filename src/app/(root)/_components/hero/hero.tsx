@@ -4,17 +4,17 @@ import React from 'react'
 const socials = [
   {
     name: 'Linkedin',
-    url: 'https://what3words.com/next.inform.served',
+    url: 'https://www.linkedin.com/company/techsparkstoke/',
     label: 'linkedin(dot)com/techsparkstoke',
   },
   {
     name: 'Discord',
-    url: 'https://what3words.com/next.inform.served',
+    url: 'https://discord.gg/pt5fsTuB',
     label: 'discord(dot)com/techsparkstoke',
   },
   {
     name: 'Twitter',
-    url: 'https://twitter.com/phpstoke',
+    url: '#',
     label: 'twitter(dot)com/techsparkstoke',
   },
 ]
