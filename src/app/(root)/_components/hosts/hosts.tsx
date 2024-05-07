@@ -47,11 +47,11 @@ export const Hosts = () => {
             </p>
           </div>
           <div className="mt-16">
-            <ul className="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8 mx-auto">
+            <ul className="space-y-4 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8 mx-auto">
               {hosts.map((host) => (
-                <li className="rounded-xl md:rounded-5xl py-10 text-center xl:text-left" key={host.name}>
+                <li className="rounded-xl md:rounded-5xl text-center xl:text-left" key={host.name}>
                   <div className="space-y-6 xl:space-y-10 relative w-full">
-                    <div className="relative w-full h-[300px] rounded-full">
+                    <div className="relative w-full h-[300px]">
                       <div className="absolute inset-0 grayscale">
                         <Image
                           alt=""
