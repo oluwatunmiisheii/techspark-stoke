@@ -1,16 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const speakers = [
-  {
-    name: 'Emmanuel Ogbiyoyo',
-    role: 'Co Founder at Experia',
-    image: '/images/hosts/IMG_7317.JPG',
-    twitter: 'https://twitter.com/jbrooksuk',
-    linkedin: 'https://pinkary.com/@jbrooksuk?ref=phpstoke',
-  },
-]
-
 export const Speakers = () => {
   return (
     <section id="speakers" className="py-20 sm:py-32">
