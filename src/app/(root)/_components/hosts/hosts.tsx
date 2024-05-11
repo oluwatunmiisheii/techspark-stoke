@@ -6,7 +6,7 @@ const hosts = [
   {
     name: 'Emmanuel Ogbiyoyo',
     role: 'Co Founder',
-    company: 'Experia',
+    company: 'Expitra',
     companyUrl: 'https://www.expitra.com',
     image: '/images/hosts/emmanuel.JPG',
     twitter: 'https://twitter.com/nuel_ogbiyoyo',
