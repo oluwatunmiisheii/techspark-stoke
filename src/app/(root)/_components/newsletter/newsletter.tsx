@@ -1,6 +1,6 @@
 export const Newsletter = () => {
   return (
-    <section id="newsletter" className="py-16 my-16 bg-zinc-50 rounded-t-3xl">
+    <section id="newsletter" className="py-16 my-16  rounded-t-3xl">
       <div className="max-w-3xl mx-auto flex flex-col space-y-8">
         <h3 className="text-center text-zinc-800 text-4xl font-bold">Follow us for updates</h3>
 

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const Footer = () => {
   return (
-    <footer className="py-16">
+    <footer className="py-16 bg-zinc-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-between md:flex-row">
         <svg aria-hidden="true" className="h-12 w-auto text-slate-900 hidden" width="182" height="46">
           <g fill="none" fillRule="nonzero">

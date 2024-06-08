@@ -14,7 +14,7 @@ const socials = [
   },
   {
     name: 'Twitter',
-    url: '#',
+    url: 'https://x.com/techsparkstoke',
     label: 'twitter(dot)com/techsparkstoke',
   },
 ]

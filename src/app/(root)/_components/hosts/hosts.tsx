@@ -48,7 +48,7 @@ export const Hosts = () => {
           </div>
           <div className="mt-16">
             <ul className="space-y-4 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8 mx-auto">
-              {hosts.map((host) => (
+              {hosts.map((host, index) => (
                 <li className="rounded-xl md:rounded-5xl text-center xl:text-left" key={host.name}>
                   <div className="space-y-6 xl:space-y-10 relative w-full">
                     <div className="relative w-full h-[300px]">
@@ -59,7 +59,9 @@ export const Hosts = () => {
                           width="2270"
                           height="2272"
                           decoding="async"
-                          className="mx-auto w-full h-full object-cover rounded-t-lg"
+                          className={`mx-auto w-full h-full object-cover rounded-t-lg ${
+                            index === 1 ? 'object-top' : 'object-center'
+                          }`}
                           src={host.image}
                         />
                       </div>
