@@ -4,7 +4,7 @@ import Image from 'next/image'
 const speakers = [
   {
     name: 'Emmanuel Ogbiyoyo',
-    topic: 'Handling concurrencyin Go the right way',
+    topic: 'Handling concurrency the right way with golang',
     image: '/images/hosts/emmanuel.JPG',
   },
   {
