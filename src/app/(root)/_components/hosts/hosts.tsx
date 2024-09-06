@@ -4,15 +4,6 @@ import React from 'react'
 
 const hosts = [
   {
-    name: 'Emmanuel Ogbiyoyo',
-    role: 'Co Founder',
-    company: 'Expitra',
-    companyUrl: 'https://www.expitra.com',
-    image: '/images/hosts/emmanuel.JPG',
-    twitter: 'https://twitter.com/nuel_ogbiyoyo',
-    linkedin: 'https://www.linkedin.com/in/nueljoe/',
-  },
-  {
     name: 'Ameen Alade',
     role: 'Software Engineer',
     company: 'Invisible Homes',

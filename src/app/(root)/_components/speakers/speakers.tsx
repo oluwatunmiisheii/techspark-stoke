@@ -3,6 +3,11 @@ import Image from 'next/image'
 
 const speakers = [
   {
+    name: 'Emmanuel Ogbiyoyo',
+    topic: 'Handling concurrencyin Go the right way',
+    image: '/images/hosts/emmanuel.JPG',
+  },
+  {
     name: 'Adegbenga Agoro',
     topic: 'The Majestic Monolith: Modularity Design Principles & practices',
     image: '/images/speakers/speaker-one.jpeg',
