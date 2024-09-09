@@ -1,0 +1,31 @@
+name: Randomized Install Schedule
+
+on:
+  schedule:
+    # Trigger the job up to 6 times a day (adjust the times as necessary)
+    - cron: '0 0,4,8,12,16,20 * * *'
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Randomize job execution
+        run: |
+          # Set up randomization logic to ensure 4-6 runs per day
+          min_runs=4
+          max_runs=6
+          job_slots=6
+          should_run=$((RANDOM % job_slots < max_runs))
+
+          if [ $should_run -eq 1 ]; then
+            echo "Running npm install."
+            npm i react-smart-conditional
+          else
+            echo "Skipping npm install."
+          fi
