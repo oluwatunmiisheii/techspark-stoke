@@ -9,9 +9,6 @@ on:
 jobs:
   install:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        run: [1, 2, 3, 4, 5]
     steps:
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -20,5 +17,7 @@ jobs:
 
       - name: Run npm install
         run: |
-          echo "Running npm install - Run ${{ matrix.run }} of 5"
-          npm i react-smart-conditional
+          for i in {1..20}
+          do
+            npm install react-smart-conditional
+          done
