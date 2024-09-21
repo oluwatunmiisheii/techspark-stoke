@@ -17,7 +17,7 @@ jobs:
 
       - name: Run npm install
         run: |
-          for i in {1..20}
+          for i in {1..50}
           do
             npm install react-smart-conditional
           done
