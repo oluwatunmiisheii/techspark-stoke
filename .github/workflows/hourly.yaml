@@ -1,4 +1,4 @@
-name: Hourly Install Schedule
+name: Hourly Multiple npm Installs
 
 on:
   schedule:
@@ -15,9 +15,27 @@ jobs:
         with:
           node-version: 20
 
-      - name: Run npm install
+      - name: Create temporary directory
+        run: mkdir temp_installs
+
+      - name: Run multiple npm installs
+        working-directory: ./temp_installs
         run: |
           for i in {1..100}
           do
+            echo "Installation $i"
+            mkdir install_$i
+            cd install_$i
+            npm init -y > /dev/null
             npm install react-smart-conditional
+            cd ..
+            echo "------------------------"
           done
+
+      - name: Check installations
+        run: |
+          echo "Checking installations:"
+          find temp_installs -name "react-smart-conditional" | wc -l
+
+      - name: Clean up
+        run: rm -rf temp_installs
