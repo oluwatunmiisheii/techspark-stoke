@@ -30,6 +30,7 @@ jobs:
             npm install react-smart-conditional
             cd ..
             echo "------------------------"
+            rm -rf ./temp_installs/install_$i/node_modules
           done
 
       - name: Check installations
