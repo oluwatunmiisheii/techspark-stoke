@@ -21,7 +21,7 @@ jobs:
       - name: Run multiple npm installs
         working-directory: ./temp_installs
         run: |
-          for i in {1..100}
+          for i in {1..60}
           do
             echo "Installation $i"
             mkdir install_$i
@@ -30,7 +30,8 @@ jobs:
             npm install react-smart-conditional
             cd ..
             echo "------------------------"
-            rm -rf ./temp_installs/install_$i/node_modules
+            # Clear npm cache to force download
+            npm cache clean --force
           done
 
       - name: Check installations
