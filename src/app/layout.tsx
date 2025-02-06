@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html className="bg-white antialiased js-focus-visible" lang="en" data-js-focus-visible="">
+    <html className="bg-white antialiased js-focus-visible tss-stoke" lang="en" data-js-focus-visible="">
       <body className={inter.className}>{children}</body>
     </html>
   )
