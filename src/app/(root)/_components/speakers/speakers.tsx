@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const speakers = [
   {
-    name: 'Emmanuel Ogbiyoyo',
+    name: 'Emmanuel Ogbiyoyo (Keynote Speaker)',
     topic: 'Event driven Microservices: The rationale the pitfalls and the path ahead',
     image: '/images/hosts/emmanuel.JPG',
   },
