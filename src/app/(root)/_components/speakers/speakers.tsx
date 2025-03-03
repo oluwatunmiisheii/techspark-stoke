@@ -4,7 +4,7 @@ import Image from 'next/image'
 const speakers = [
   {
     name: 'Emmanuel Ogbiyoyo',
-    topic: 'Handling concurrency the right way with golang',
+    topic: 'Event driven Microservices: The rationale the pitfalls and the path ahead',
     image: '/images/hosts/emmanuel.JPG',
   },
   {
