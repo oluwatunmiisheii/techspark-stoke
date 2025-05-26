@@ -5,6 +5,7 @@ import { Speakers } from './_components/speakers/speakers'
 import { Newsletter } from './_components/newsletter/newsletter'
 
 export default function Home() {
+  console.log('Rendering Home Page')
   return (
     <>
       <Hero />
