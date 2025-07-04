@@ -21,13 +21,13 @@ jobs:
       - name: Run multiple npm installs
         working-directory: ./temp_installs
         run: |
-          for i in {1..40}
+          for i in {1..10}
           do
             echo "Installation $i"
             mkdir install_$i
             cd install_$i
             npm init -y > /dev/null
-            npm install react-smart-conditional
+            npm i disposable-email-validator
             cd ..
             echo "------------------------"
             # Clear npm cache to force download
@@ -37,7 +37,7 @@ jobs:
       - name: Check installations
         run: |
           echo "Checking installations:"
-          find temp_installs -name "react-smart-conditional" | wc -l
+          find temp_installs -name "disposable-email-validator" | wc -l
 
       - name: Clean up
         run: rm -rf temp_installs
